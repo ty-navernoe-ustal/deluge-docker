@@ -1,5 +1,5 @@
-FROM ubuntu:20.04
-ENV TZ=Europe/Moscow
+FROM ubuntu:23.10
+ENV TZ=Europe/Madrid
 RUN \
  ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
  apt update && apt -y install deluged deluge-web && \
